@@ -5,6 +5,7 @@ import applePay from "../images/apple-pay.png";
 import gPay from "../images/google-pay.png";
 import unicorn_dust from "../images/unicorn_dust.svg";
 import sky_shaped from "../images/sky_shaped.svg";
+import {motion} from "framer-motion/dist/framer-motion";
 
 const PaymentScreen = ({ setScreen }) => (
   <div className={styles.paymentScreenContainer}>
@@ -14,8 +15,33 @@ const PaymentScreen = ({ setScreen }) => (
     <button onClick={() => setScreen('preparation')} className={styles.payButtonGpay}><img src={applePay}/></button>
     <button onClick={() => setScreen('preparation')} className={styles.payButtonApple}><img src={gPay}/></button>
     <div className={styles.donutContentWrapper}>
-            <img className={styles.sky_shaped} src={sky_shaped}/>
-            <img className={styles.unicornDonut} src={unicorn_dust}/>
+            <motion.img className={styles.sky_shaped} src={sky_shaped}
+            animate={{
+              y: [50,0],
+              x: [-50,0],
+              opacity: 1,
+              scale: 1
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.3,
+              ease: [0.5, 0.5, 0.5, 0.5]
+            }}
+            initial={{ opacity: 0, }}
+            whileHover={{ rotate: 20 }}/>
+            <motion.img className={styles.unicornDonut} src={unicorn_dust}
+            animate={{
+              x: [50, 0],
+              opacity: 1,
+              scale: 1
+            }}
+            transition={{
+              duration: 0.8,
+              delay: 0.3,
+              ease: [0.5, 0.5, 0.5, 0.5]
+            }}
+            initial={{ opacity: 0 }}
+            whileHover={{ rotate: 20 }}/>
         </div>
   </div>
 );
