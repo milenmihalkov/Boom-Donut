@@ -1,0 +1,50 @@
+.menuScreeContainer{
+    position: relative;
+    width: 428px;
+    height: 926px;
+    overflow: hidden;
+    background-color:#21E8E5;
+    text-align: center;
+}
+.menuTitleSmall{
+    display: block;
+    font-size: 48px;
+    line-height: 40px;
+    text-align: right;
+    letter-spacing: 1px;
+}
+.menuTitle{
+    font-size: 91px;
+    display: block;
+    line-height: 67px;
+    text-align: right;
+    margin-top: 74px;
+    padding: 0 35px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+.donutList{
+    padding: 0 35px;
+}
+.donutItem{
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 139px min-content;
+    grid-gap: 36px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.donutItem img {
+    width: 117px;
+    filter: drop-shadow(2px 6px 4px rgb(35, 128, 165));
+}
+
+.donutItemTitle{
+    font-size: 35px;
+    line-height: 35px;
+    color: white;
+    font-weight: 900;
+    text-align: right;
+}

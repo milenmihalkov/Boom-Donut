@@ -1,6 +1,23 @@
 #root {
+  width: 428px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 926px;
+  background-color: beige;
+  margin: auto;
+  position: relative;
+}
+
+button{
+  background-color: white;
+    border: none;
+    width: 276px;
+    display: inline-block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    cursor: pointer;
 }

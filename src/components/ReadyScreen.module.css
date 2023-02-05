@@ -1,0 +1,60 @@
+.readyScreenContainer{
+    position: relative;
+    width: 428px;
+    height: 926px;
+    overflow: hidden;
+    background-color:#21e8e5;
+    z-index: 0;
+}
+
+.readyScreenContainer::after{
+    content: '';
+    position: absolute;
+    left: -30%;
+    width: 146%;
+    height: 148%;
+    background-color: #5739d6;
+    top: 21px;
+    transform: rotate(140deg);
+    z-index: 0;
+}
+/* * {flex: 1 ;} */
+.readyScreenContentContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    margin-bottom: 110px;
+}
+.readyScreenImageContainer{
+    margin-top: 133px;
+
+}
+.readyScreenImageContainer img{
+    width: 300px;
+    filter: drop-shadow(2px 6px 4px rgb(11, 33, 141));
+
+}
+.readyScreenTitleContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 85px;
+}
+.readyScreenTitleContainer h1{
+    text-align: right;
+    font-size: 39px;
+    line-height: 44px;
+}
+.readyScreenButtonContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+
+}
