@@ -10,9 +10,15 @@ return(
     <p className={styles.donutItemTitle}>{type}</p>
     <div className={styles.donutImageWrapper}>
       <motion.img 
+       animate={{
+        x: [100, 0],
+        rotate:-360,
+        opacity: 1,
+        scale: 1
+      }}
       transition={{
-          duration: 2,
-          ease: [0.5, 0.71, 0.5, 0.5],
+          duration: 1.8,
+          ease: [0.5, 0.5, 0.5, 0.5],
       }}
       whileHover={{ rotate: 360  }}
       src={image} alt={type}/>
