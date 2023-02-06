@@ -6,13 +6,12 @@ import unicorn_dust from "../images/unicorn_dust.svg";
 import true_blood from "../images/true_blood.svg";
 import marble_magic from "../images/marble_magic.svg";
 import sky_shaped from "../images/sky_shaped.svg";
-import { useEffect } from "react";
 
 
 const MenuScreen = ({ setScreen }) => {
 
   const handleDonutClick = (type) => {
-    console.log(type);
+    //console.log(type);
     localStorage.setItem("selectedDonut", type);
     setScreen("payment");
   };

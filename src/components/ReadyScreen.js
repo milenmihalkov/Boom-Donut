@@ -6,7 +6,7 @@ const ReadyScreen = ({ setScreen }) => (
   <div className={styles.readyScreenContainer}>
     <div className={styles.readyScreenContentContainer}>
       <div className={styles.readyScreenImageContainer}>
-        <img src={localStorage.getItem('selectedDonut')}/>
+        <img src={localStorage.getItem('selectedDonut')} alt="Your Donut"/>
       </div>
     </div>
     <div className={styles.readyScreenTitleContainer}>
@@ -14,8 +14,8 @@ const ReadyScreen = ({ setScreen }) => (
     </div>
     <div className={styles.readyScreenButtonContainer}>
       <button onClick={() => {
-        localStorage.clear()
-        setScreen('start')
+        localStorage.clear();
+        setScreen('start');
         }}>Done</button>
     </div>
   </div>
